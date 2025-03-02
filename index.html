@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkedIn Style Profile</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f2ef;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      width: 480px;
+      text-align: center;
+    }
+
+    /* Vocalink Logo Section */
+    .vocalink-logo {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocalink-logo img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .vocalink-logo .logo-text {
+      font-size: 20px;
+      font-weight: bold;
+      color: #0077b5;
+    }
+
+    /* Cover Photo Section */
+    .cover-photo-container {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      background-color: #0077b5;
+      background-image: url('cover.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    /* Profile Photo Section */
+    .profile-photo {
+      position: absolute;
+      bottom: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 4px solid #ffffff;
+      background-color: #ffffff;
+      overflow: hidden;
+    }
+
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Profile Info Section */
+    .profile-info {
+      margin-top: 35px;
+      padding: 20px;
+    }
+
+    .profile-info h3 {
+      font-size: 24px;
+      color: #333333;
+      margin: 0;
+    }
+
+    .profile-info p {
+      font-size: 16px;
+      color: #606770;
+      margin: 2px;
+    }
+
+    /* Voice Assistant Section */
+    .voice-assistant {
+      margin-top: 10px;
+      padding: 10px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: #ffffff;
+      transition: background-color 0.3s, transform 0.3s;
+      cursor: pointer;
+    }
+
+    .voice-assistant img {
+      width: 40px;
+      height: 40px;
+    }
+
+    .voice-assistant:hover {
+      transform: scale(1.1);
+    }
+
+    .tap-text {
+      font-size: 12px;
+      color: #666666;
+      margin-top: 0px;
+    }
+
+    /* Dialog Section */
+    .dialog-section {
+      margin: 30px;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .asked-text {
+      color: #333333;
+      font-weight: ;
+      font-size: 13px;
+    }
+
+    .response-text {
+      color: #0077b5;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .copyright {
+      font-size: 12px;
+      color: #999999;
+      margin: 25px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Vocalink Logo -->
+    <div class="vocalink-logo">
+      <img src="assist.jpg" alt="Vocalink Logo">
+      <span class="logo-text">Vocalink</span>
+    </div>
+
+    <!-- Cover Photo -->
+    <div class="cover-photo-container">
+      <div class="profile-photo">
+        <img src="Profile.jpg" alt="Profile Photo">
+      </div>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="profile-info">
+      <h3>Sai Charan Puduthala</h3>
+      <p>Web Developer | Professional Editor</p>
+    </div>
+
+    <!-- Voice Assistant -->
+    <div class="voice-assistant">
+      <img src="assist.jpg" alt="Voice Assistant Icon">
+    </div>
+    <div class="tap-text">Tap to Speak</div>
+
+<!-- Dialog Section -->
+<div class="dialog-section">
+  <div class="asked-text">User Input: <span style="color: #999;">(e.g.,Tell me about the shown candidate?)</span></div>
+  <div class="response-text">
+</div>
+
+    <!-- Footer -->
+    <div class="copyright">
+      &copy; Vocalink 2024. All rights reserved.
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
